@@ -1,0 +1,69 @@
+1.master 원본
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
+
+</body>
+
+
+2.분기 : hello world image
+<body>
+<h1>Hello world!</h1>
+<div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:960px"></div>
+<p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
+
+</body>
+
+
+3.분기 : emergency-fix
+
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+<p>This line is here to show how merging works.</p>
+
+</body>
+
+
+4.master, emergency-fix  :  merge
+
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+<p>This line is here to show how merging works.</p>
+
+</body>
+
+
+5.hello world image : 내용수정  add
+
+<body>
+<h1>Hello world!</h1>
+<div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:960px"></div>
+<p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
+<div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+</body>
+
+
+6.master, hello world image :  merge ==> 충돌
+<body>
+
+<h1>Hello world!</h1>
+<div><img src="img_hello_world.jpg" alt="Hello World from Space" style="width:100%;max-width:960px"></div>
+<p>This is the first file in my new Git Repo.</p>
+<<<<<<< HEAD
+<p>This line is here to show how merging works.</p>
+=======
+<p>A new line in our file!</p>
+<div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;max-width:640px"></div>
+>>>>>>> hello-world-images
+
+</body>
+
+7. 적절히 수정후 add ==> commit
